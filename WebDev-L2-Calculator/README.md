@@ -16,10 +16,14 @@ A responsive calculator developed using **HTML5**, **CSS3**, and **Vanilla JavaS
 - Division by zero handling
 - Operator chaining
 - Responsive layout for desktop and mobile devices
+- Operator chaining
 - CSS Grid used for button layout alignment
 - Event listeners on all buttons
 - Built without using `eval()`
 - Implemented using JavaScript functions, event listeners, and conditional logic
+- **Light/Drak theme toggle**
+- ** Theme preference saved using Local Storage **
+
 
 ## Technologies Used
  - HTML5
@@ -35,7 +39,6 @@ WebDev-L2-Calculator/
 - Keyboard support
 - Scientific calculator functions
 - Calculation history
-- Light/Dark mode
 
 ## Author
 Chandana

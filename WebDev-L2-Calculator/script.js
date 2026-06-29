@@ -5,13 +5,16 @@ const deleteButton = document.querySelector(".delete");
 const operatorButtons = document.querySelectorAll(".operator");
 const equalButton = document.querySelector(".equals");
 const decimalButton = document.querySelector(".decimal");
+const themeToggle =document.getElementById("themeToggle");
 let currentNum="";
 let prevNum="";
 let operator="";
 let expression="";
+
 function updateDisplay(){
     display.value = expression ||"0";
 }
+
 function appendNumber(number){
     currentNum += number;
     expression += number;
@@ -91,6 +94,7 @@ function appendDecimal(){
         updateDisplay();
     }
 }
+
 numberButtons.forEach((button) => {
   button.addEventListener("click", () => {
       appendNumber(button.textContent);
@@ -109,3 +113,25 @@ operatorButtons.forEach((button) => {
 });
 equalButton.addEventListener("click",calculate);
 decimalButton.addEventListener("click", appendDecimal);
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    if(document.body.classList.contains("dark")){
+        themeToggle.textContent = "☀️";
+    } else{
+        themeToggle.textContent = "🌙";
+    }
+    if (document.body.classList.contains("dark")) {
+
+    localStorage.setItem("theme", "dark");
+
+} else {
+
+    localStorage.setItem("theme", "light");
+
+}
+});
+const savedTheme = localStorage.getItem("theme");
+if(savedTheme === "dark"){
+    document.body.classList.add("dark");
+    themeToggle.textContent="☀️";
+}
