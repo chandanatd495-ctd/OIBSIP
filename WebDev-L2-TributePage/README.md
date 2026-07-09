@@ -1,4 +1,5 @@
-# Marie Curie Tribute Page
+# Oasis Infobyte Internship Level 2
+## Task 2-  Marie Curie Tribute Page
 
 A responsive tribute page dedicated to **Marie Curie**, one of the greatest scientists in history. This project was created as **Task 2** for the **Oasis Infobyte Web Development and Designing Internship (OIBSIP)** using HTML and CSS.
 
