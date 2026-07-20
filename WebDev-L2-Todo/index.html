@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>TaskFlow</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="sparkle sparkle1">✦</div>
+        <div class="sparkle sparkle2">✦</div>
+        <div class="sparkle sparkle3">✦</div>
+        <div class="sparkle sparkle4">✦</div>
+        <div class="hero-content">
+            <h1>TaskFlow</h1>
+            <p class="tagline">
+               Create space for what matters.
+            </p>
+
+            <p class="subtitle">
+             The simplest way to organize your day.
+            </p>
+
+        </div>
+
+    </section>
+    <main class="container">
+        <p class="welcome">Let's make today productive.</p>
+        <section class="summary-section">
+    <h2>Today's Summary</h2>
+
+    <p id="summaryText">
+        You have no tasks yet. Add one to get started!
+    </p>
+</section>
+        <section class="add-task">
+
+            <h2>What would you like to accomplish today?</h2>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Start with one small step..."
+                >
+
+                <button id="addTask">
+                    Add Task
+                </button>
+
+            </div>
+
+        </section>
+    <div class="task-wrapper">
+        <section class="tasks">
+
+            <div class="section-header">
+
+                <h2>Pending Tasks</h2>
+
+                <span id="pendingCount">
+                  0 Pending
+                </span>
+
+            </div>
+            <div id="pendingList">
+          <p class="empty-message" id="pendingEmpty">
+                 No pending tasks. Add one to get started!
+           </p>
+        </div>
+
+        </section>
+
+        <section class="tasks">
+
+            <div class="section-header">
+
+                <h2>Completed Tasks</h2>
+
+                <span id="completedCount">
+                     0 Completed
+               </span>
+
+            </div>
+
+            <div id="completedList">
+                 <p class="empty-message" id="completedEmpty">
+                  Complete a task to celebrate your progress!
+                 </p>
+            </div>
+
+        </section>
+</div>
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
